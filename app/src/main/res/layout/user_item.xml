@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewUserName"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/imageView"
+            android:text="userName"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:scaleType="centerCrop"
+            android:background="#05FB0F"
+            android:id="@+id/imageViewOnline"
+            android:layout_below="@id/textViewUserName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-7dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/imageView" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:scaleType="centerCrop"
+           android:background="#DAD4E3"
+            android:id="@+id/imageViewOffline"
+            android:layout_below="@id/textViewUserName"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="-7dp"
+            android:visibility="gone"
+            android:layout_toRightOf="@id/imageView" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_marginTop="5dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLastMessage"
+            android:layout_below="@id/textViewUserName"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#E8E3EF">
+    </View>
+
+</LinearLayout>
